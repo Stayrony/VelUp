@@ -8,6 +8,6 @@ namespace VelUp.Services.Authorization
     {
         Task<AOResult> LoginAsync(string email, string password);
 
-        Task LogoutAsync();
+        Task<AOResult> LogoutAsync();
     }
 }
