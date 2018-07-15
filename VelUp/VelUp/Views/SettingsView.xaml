@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   x:Class="VelUp.Views.SettingsView"
+                   xmlns:p="clr-namespace:VelUp.Views;assembly=VelUp"
+                   xmlns:localization="clr-namespace:VelUp.Resources.Strings;assembly=VelUp"
+                   Title="{x:Static localization:Strings.Settings}"
+                   Icon="tune">
+    <ContentView.Content>
+    </ContentView.Content>
+</p:BaseContentPage>

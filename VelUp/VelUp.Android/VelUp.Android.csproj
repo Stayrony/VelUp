@@ -48,17 +48,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
-    <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.Design">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v4">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.Core">
+      <Version>7.0.0.396</Version>
+    </PackageReference>
+    <PackageReference Include="Unity">
+      <Version>5.8.6</Version>
+    </PackageReference>
+    <PackageReference Include="CommonServiceLocator">
+      <Version>2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Acr.UserDialogs">
+      <Version>7.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms">
+      <Version>3.1.0.637273</Version>
+    </PackageReference>
+    <PackageReference Include="BottomNavigationBar">
+      <Version>1.4.0.3</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\ExtendedEntryRenderer.cs" />
+    <Compile Include="Renderers\TabbedPageRenderer.cs" />
+    <Compile Include="Units\MeasureSpecFactory.cs" />
+    <Compile Include="Units\PageController.cs" />
+    <Compile Include="Units\ReflectedProxy.cs" />
+    <Compile Include="Units\ResourceManagerEx.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -82,6 +115,16 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_password_sign_up.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_mail_sign_up.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_password_sign_up.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_mail_sign_up.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_password_sign_up.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_mail_sign_up.png" />
+    <AndroidResource Include="Resources\drawable\velup_logo.png" />
+    <AndroidResource Include="Resources\drawable\tune.png" />
+    <AndroidResource Include="Resources\drawable\map_marker_circle.png" />
+    <AndroidResource Include="Resources\drawable\bookmark_outline.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -89,6 +132,7 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Renderers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VelUp\VelUp.csproj">

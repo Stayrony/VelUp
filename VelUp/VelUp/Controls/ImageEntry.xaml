@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VelUp.Controls.ImageEntry" 
+             xmlns:controls="clr-namespace:VelUp.Controls;assembly=VelUp"
+             x:Name="imgEntry">
+
+    <StackLayout Spacing="2" BindingContext="{x:Reference Name=imgEntry}">
+        <StackLayout Orientation="Horizontal" Spacing="10" Padding="2">
+            <Image Source="{Binding ImageSource}" VerticalOptions="Center"/>
+            <controls:ExtendedEntry
+                Text="{Binding Text, Mode=TwoWay}"
+                Placeholder="{Binding PlaceholderText}"
+                PlaceholderColor="#3a4348"
+                Keyboard="{Binding Keyboard}"
+                IsPassword="{Binding IsPassword}" 
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Fill"
+                FontSize="13"
+            />
+        </StackLayout>
+        <BoxView Color="#9ba6b6" HeightRequest="1"/>
+    </StackLayout>
+    
+</ContentView>
