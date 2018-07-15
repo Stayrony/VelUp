@@ -29,7 +29,6 @@ namespace VelUp
             //ATTENTION! Do not move this code to constructor - we must to load key from storage before choosing first app screen.
             //This code writed by Prism convetion - see http://brianlagunas.com/prism-for-xamarin-forms-6-2-0-preview-3/
             InitializeComponent();
-            AppNavigation();
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -41,6 +40,7 @@ namespace VelUp
             //Navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<RootView>();
+            containerRegistry.RegisterForNavigation<LoginView>();
             containerRegistry.RegisterForNavigation<SettingsView>();
             containerRegistry.RegisterForNavigation<ExploreView>();
             containerRegistry.RegisterForNavigation<BookmarksView>();
@@ -65,20 +65,6 @@ namespace VelUp
         #endregion
 
         #region -- Private helpers --
-
-        private async void AppNavigation()
-        {
-            //ISignInService signInService = Container.Resolve<SignInService>();
-
-            //if (await signInService.IsAuthorizedAsync())
-            //{
-            //    await NavigationService.NavigateAsync('/' + nameof(CustomNavigationPage) + '/' + nameof(RootView));
-            //}
-            //else
-            //{
-            //    await NavigationService.NavigateAsync('/' + nameof(LoginView), useModalNavigation: false);
-            //}
-        }
 
         #endregion
     }

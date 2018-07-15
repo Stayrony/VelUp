@@ -34,7 +34,6 @@ namespace VelUp.iOS.Renderers
 
         #endregion
 
-
         #region -- Private helpers --
 
         private void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)

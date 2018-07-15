@@ -39,4 +39,10 @@
     <data name="IncorrectLoginDataMessage" xml:space="preserve">
         <value>Your login and/or password are incorrect</value>
     </data>
+    <data name="Logout" xml:space="preserve">
+        <value>LOGOUT</value>
+    </data>
+    <data name="SomethingWentWrong" xml:space="preserve">
+        <value>Something went wrong. Please try again later</value>
+    </data>
 </root>

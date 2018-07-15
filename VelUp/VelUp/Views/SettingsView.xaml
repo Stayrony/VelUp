@@ -7,5 +7,23 @@
                    Title="{x:Static localization:Strings.Settings}"
                    Icon="tune">
     <ContentView.Content>
+
+<Grid RowSpacing="0" 
+        ColumnSpacing="0" 
+        Padding="32,28" 
+        BackgroundColor="{StaticResource Background}"> 
+            
+        <Button Grid.Row="8" Margin="30,0"
+                VerticalOptions="CenterAndExpand"
+            TextColor="White" 
+            BorderRadius="25" 
+            HeightRequest="54"
+            Text="{x:Static localization:Strings.Logout}" 
+            BackgroundColor="{StaticResource MainButtonColor}"
+            Command="{Binding LogoutCommand}"
+            AutomationId="logoutButton"/>
+
+          </Grid>
+            
     </ContentView.Content>
 </p:BaseContentPage>

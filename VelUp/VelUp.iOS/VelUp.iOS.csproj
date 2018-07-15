@@ -189,7 +189,7 @@
     <BundleResource Include="Resources\ic_mail_sign_up.png" />
     <BundleResource Include="Resources\velup_logo.png" />
     <BundleResource Include="Resources\tune.png" />
-    <BundleResource Include="Resources\bookmark-outline.png" />
+    <BundleResource Include="Resources\bookmark_outline.png" />
     <BundleResource Include="Resources\map_marker_circle.png" />
   </ItemGroup>
 </Project>

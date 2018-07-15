@@ -100,5 +100,17 @@ namespace VelUp.Resources.Strings {
                 return ResourceManager.GetString("IncorrectLoginDataMessage", resourceCulture);
             }
         }
+        
+        public static string Logout {
+            get {
+                return ResourceManager.GetString("Logout", resourceCulture);
+            }
+        }
+        
+        public static string SomethingWentWrong {
+            get {
+                return ResourceManager.GetString("SomethingWentWrong", resourceCulture);
+            }
+        }
     }
 }

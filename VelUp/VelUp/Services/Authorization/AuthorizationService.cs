@@ -30,12 +30,24 @@ namespace VelUp.Services.Authorization
             return res;
         }
 
-        public async Task LogoutAsync()
+        public async Task<AOResult> LogoutAsync()
         {
-            await Task.Delay(3000);
+            var res = new AOResult();
+
+            try
+            {
+                //Implement logout logic
+                await Task.Delay(500);
+                res.SetSuccess();
+            }
+            catch (Exception ex)
+            {
+                res.SetError(nameof(LogoutAsync), ex.Message, ex);
+            }
+
+            return res;
         }
 
         #endregion
-
     }
 }

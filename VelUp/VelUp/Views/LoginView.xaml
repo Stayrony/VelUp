@@ -52,11 +52,10 @@
             TextColor="White" 
             BorderRadius="25" 
             HeightRequest="54"
-            Text="{x:Static localization:Strings.Login}" 
-                 BackgroundColor="{StaticResource MainButtonColor}"
+            Text="{x:Static localization:Strings.Login}"
+            BackgroundColor="{StaticResource MainButtonColor}"
             Command="{Binding LoginCommand}"
-                AutomationId="loginButton"/>
-            
+            AutomationId="loginButton"/>
           </Grid>
         
     </ContentPage.Content>

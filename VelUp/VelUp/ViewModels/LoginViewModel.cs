@@ -25,11 +25,13 @@ namespace VelUp.ViewModels
             _authorizationService = authorizationService;
             _userDialogsService = userDialogsService;
 
-            #if DEBUG
-            Email = "devamb4@jordencorp.dvgf";
+#if DEBUG
+            Email = "email@gmail.com";
             Password = "123456";
 #endif
         }
+
+        #region -- Public properties --
 
         private ICommand _LoginCommand;
         public ICommand LoginCommand
@@ -50,6 +52,10 @@ namespace VelUp.ViewModels
             get { return _Email; }
             set { SetProperty(ref _Email, value); }
         }
+
+        #endregion
+
+        #region -- Private helpers --
 
         private async Task OnLoginCommandAsync()
         {
@@ -82,5 +88,7 @@ namespace VelUp.ViewModels
                 await _userDialogsService.AlertAsync(Strings.IncorrectLoginDataMessage);
             }
         }
+
+        #endregion
     }
 }
