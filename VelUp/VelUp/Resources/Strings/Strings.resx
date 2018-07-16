@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="EnterEmailMessage" xml:space="preserve">
+        <value>Please enter your email</value>
+    </data>
+    <data name="EnterPasswordMessage" xml:space="preserve">
+        <value>Please enter your password</value>
+    </data>
+    <data name="Login" xml:space="preserve">
+        <value>LOGIN</value>
+    </data>
+    <data name="YourEmail" xml:space="preserve">
+        <value>Your email</value>
+    </data>
+    <data name="Password" xml:space="preserve">
+        <value>Password</value>
+    </data>
+    <data name="Settings" xml:space="preserve">
+        <value>Settings</value>
+    </data>
+    <data name="Explore" xml:space="preserve">
+        <value>Explore</value>
+    </data>
+    <data name="Bookmarks" xml:space="preserve">
+        <value>Bookmarks</value>
+    </data>
+    <data name="IncorrectLoginDataMessage" xml:space="preserve">
+        <value>Your login and/or password are incorrect</value>
+    </data>
+    <data name="Logout" xml:space="preserve">
+        <value>LOGOUT</value>
+    </data>
+    <data name="SomethingWentWrong" xml:space="preserve">
+        <value>Something went wrong. Please try again later</value>
+    </data>
+</root>
