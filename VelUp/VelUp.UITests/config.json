@@ -1,0 +1,19 @@
+﻿{
+    "Settings": [
+        {
+            "Platform": "iOS",
+            "SerialNumbers": [
+                "b509b42b821a0b2eeb58ed5659e504c118d0323c",
+                "3bf7f32a9cfbfdd019efa781cc2173be76fb2494"
+            ],
+            "AssemblyPath": "com.stayrony.VelUp"
+        },
+        {
+            "Platform": "Android",
+            "SerialNumbers": [
+                "ZX1G22VMH7"
+            ],
+            "AssemblyPath": "../../../Droid/bin/Release/com.stayrony.VelUp.apk"
+        }
+    ]
+}
