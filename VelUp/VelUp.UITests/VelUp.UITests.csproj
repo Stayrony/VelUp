@@ -66,11 +66,13 @@
     <Compile Include="Services\Settings\SettingsService.cs" />
     <Compile Include="Models\DeviceSettingsItem.cs" />
     <Compile Include="Models\DevicesSettings.cs" />
+    <Compile Include="Helpers\ScreenHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Services\Settings\" />
     <Folder Include="Models\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="config.json" />
