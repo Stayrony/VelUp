@@ -112,5 +112,11 @@ namespace VelUp.Resources.Strings {
                 return ResourceManager.GetString("SomethingWentWrong", resourceCulture);
             }
         }
+        
+        public static string Ok {
+            get {
+                return ResourceManager.GetString("Ok", resourceCulture);
+            }
+        }
     }
 }
