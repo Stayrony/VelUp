@@ -68,6 +68,7 @@
     <Compile Include="Models\DevicesSettings.cs" />
     <Compile Include="Helpers\ScreenHelper.cs" />
     <Compile Include="AuthorizationTests\LoginTests.cs" />
+    <Compile Include="AuthorizationTests\LogoutTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
