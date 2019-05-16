@@ -45,4 +45,7 @@
     <data name="SomethingWentWrong" xml:space="preserve">
         <value>Something went wrong. Please try again later</value>
     </data>
+    <data name="Ok" xml:space="preserve">
+        <value>Ok</value>
+    </data>
 </root>
