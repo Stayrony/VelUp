@@ -15,8 +15,7 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -48,40 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Android.Support.Design">
-      <Version>27.0.2.1</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat">
-      <Version>27.0.2.1</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.v4">
-      <Version>27.0.2.1</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.v7.CardView">
-      <Version>27.0.2.1</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter">
-      <Version>27.0.2.1</Version>
-    </PackageReference>
-    <PackageReference Include="Prism.Core">
-      <Version>7.0.0.396</Version>
-    </PackageReference>
-    <PackageReference Include="Unity">
-      <Version>5.8.6</Version>
-    </PackageReference>
-    <PackageReference Include="CommonServiceLocator">
-      <Version>2.0.3</Version>
-    </PackageReference>
-    <PackageReference Include="Acr.UserDialogs">
-      <Version>7.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Forms">
-      <Version>3.1.0.637273</Version>
-    </PackageReference>
-    <PackageReference Include="BottomNavigationBar">
-      <Version>1.4.0.3</Version>
-    </PackageReference>
-  </ItemGroup>
+      <PackageReference Include="Xamarin.Google.Android.Material" Version="1.5.0" />
+      <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.5.1.1" />
+      <PackageReference Include="Xamarin.AndroidX.AppCompat.AppCompatResources" Version="1.5.1.1" />
+      <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4" Version="1.0.0.16" />
+      <PackageReference Include="Xamarin.AndroidX.CardView" Version="1.0.0.18" />
+      <PackageReference Include="Xamarin.AndroidX.MediaRouter" Version="1.3.1.2" />
+      <PackageReference Include="Xamarin.AndroidX.Migration" Version="1.0.10" />
+      <PackageReference Include="Xamarin.AndroidX.Core" Version="1.9.0.2" />
+      <PackageReference Include="Prism.Core" Version="8.1.97" />
+      <PackageReference Include="Unity" Version="5.11.10" />
+      <PackageReference Include="CommonServiceLocator" Version="2.0.7" />
+      <PackageReference Include="Acr.UserDialogs" Version="7.0.1" />
+      <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
+      <PackageReference Include="BottomNavigationBar" Version="1.4.0.3" />
+</ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -135,10 +115,7 @@
     <Folder Include="Renderers\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VelUp\VelUp.csproj">
-      <Project>{2318528D-A618-4C7F-A2F3-0A964C4F5DA7}</Project>
-      <Name>VelUp</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\VelUp\VelUp.csproj" />
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
